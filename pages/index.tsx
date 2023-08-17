@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       {/* Top Section */}
-      <h1 className={styles.h1}>BEES HIVE</h1>
+      <h1 className={styles.h1}>Welcome to Hive!</h1>
       <div className={styles.nftBoxGrid}>
         <div
           className={styles.optionSelectBox}
@@ -17,10 +17,9 @@ const Home: NextPage = () => {
           onClick={() => router.push(`/mint`)}
         >
           {/* Mint a new NFT */}
-          <Image src="/icons/drop.webp" alt="drop" width={64} height={64} />
           <h2 className={styles.selectBoxTitle}>Mint a new BEE</h2>
           <p className={styles.selectBoxDescription}>
-            Use the NFT Drop Contract to claim an NFT from the collection.
+            You can claim 5 NFT per wallet.
           </p>
         </div>
 
@@ -30,11 +29,10 @@ const Home: NextPage = () => {
           onClick={() => router.push(`/stake`)}
         >
           {/* Staking an NFT */}
-          <Image src="/icons/token.webp" alt="token" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>Stake Your BEES</h2>
+          <h2 className={styles.selectBoxTitle}>Stake Your Bees!</h2>
           <p className={styles.selectBoxDescription}>
-            Use the custom staking contract deployed via <b>thirdweb Deploy</b>{" "}
-            to stake your NFTs, and earn tokens from the <b>Token</b> contract.
+            STAKE your <b>BEES</b>{" "}
+            and receive <b>HoneyBees</b>.
           </p>
         </div>
       </div>
